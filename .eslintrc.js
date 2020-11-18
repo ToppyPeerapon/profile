@@ -22,5 +22,17 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        semi: ['error', 'never'],
+        'no-console': ['warn', { allow: ['warn', 'error'] }],
+        'no-duplicate-imports': ['error', { includeExports: true }],
+        '@typescript-eslint/member-delimiter-style': 0,
+        '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+        'react/prop-types': 0,
+        'arrow-parens': ['error', 'as-needed'],
+        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     }
-};
+}
